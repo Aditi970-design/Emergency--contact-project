@@ -1,0 +1,123 @@
+
+.tips-hero {
+    padding: 70px 0;
+    background: #fff1f2;
+    text-align: center;
+
+    span {
+        color: #dc2626;
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    h1 {
+        color: #111827;
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin: 12px 0;
+    }
+
+    p {
+        color: #6b7280;
+    }
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.tip-card {
+    padding: 26px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: white;
+
+    > i {
+        font-size: 2rem;
+        color: #dc2626;
+    }
+
+    h3 {
+        color: #111827;
+        margin: 15px 0 8px;
+    }
+
+    p {
+        color: #6b7280;
+        font-size: 0.95rem;
+    }
+}
+
+.first-aid {
+    background: #f9fafb;
+}
+
+.first-aid-list {
+    display: grid;
+    gap: 16px;
+
+    article {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 22px;
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+    }
+
+    span {
+        display: grid;
+        place-items: center;
+        min-width: 45px;
+        height: 45px;
+        background: #fee2e2;
+        color: #dc2626;
+        font-weight: 800;
+        border-radius: 10px;
+    }
+
+    h3 {
+        color: #111827;
+        margin-bottom: 5px;
+    }
+
+    p {
+        color: #6b7280;
+    }
+}
+
+.safety-warning {
+    display: flex;
+    gap: 14px;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background: #fff7ed;
+    color: #9a3412;
+
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .first-aid-list {
+        article {
+            gap: 12px;
+            padding: 16px;
+        }
+    }
+}

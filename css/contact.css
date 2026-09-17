@@ -1,0 +1,132 @@
+
+.contact-hero {
+    background: #fff1f2;
+    padding: 65px 0;
+    text-align: center;
+
+    span {
+        color: #dc2626;
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    h1 {
+        color: #111827;
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin: 12px 0;
+    }
+
+    p {
+        color: #6b7280;
+    }
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.contact-info {
+    h2 {
+        color: #111827;
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    > p {
+        color: #6b7280;
+        margin-bottom: 30px;
+    }
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+
+    > i {
+        display: grid;
+        place-items: center;
+        min-width: 45px;
+        height: 45px;
+        background: #fee2e2;
+        color: #dc2626;
+        border-radius: 10px;
+    }
+
+    h3 {
+        color: #111827;
+        margin-bottom: 3px;
+    }
+
+    p {
+        color: #6b7280;
+        font-size: 0.9rem;
+    }
+}
+
+.contact-form {
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px #00000008;
+
+    h2 {
+        color: #111827;
+        margin-bottom: 22px;
+    }
+
+    label {
+        display: block;
+        color: #374151;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin: 15px 0 7px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        outline: none;
+        background: white;
+
+        &:focus {
+            border-color: #dc2626;
+            box-shadow: 0 0 0 3px #dc262620;
+        }
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.form-message {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #15803d;
+}
+
+@media (max-width: 800px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-form {
+        padding: 20px;
+    }
+}

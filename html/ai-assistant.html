@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant | Emergency Contact</title>
+
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/ai-assistant.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/ai-assistant.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar container">
+        <a href="/index.html" class="logo">
+            <i class="fa-solid fa-shield-heart"></i>
+            Emergency<span>Contact</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation"
+                aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="emergency.html">Emergency Numbers</a></li>
+            <li><a href="safety-tips.html">Safety Tips</a></li>
+            <li><a href="ai-assistant.html" class="active">AI Assistant</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="assistant-page">
+    <section class="container assistant-container">
+        <div class="assistant-heading">
+            <span><i class="fa-solid fa-robot"></i> SAFETY SUPPORT</span>
+            <h1>Emergency AI Assistant</h1>
+            <p>
+                Ask a safety-related question and get basic guidance.
+            </p>
+        </div>
+
+        <div class="chat-card">
+            <div class="chat-header">
+                <div class="bot-icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                    <h2>Safety Assistant</h2>
+                    <p><span class="online-dot"></span> Demo assistant</p>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages"
+                 aria-live="polite" aria-label="Chat messages">
+                <div class="message bot-message">
+                    <div class="message-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        Hello! I can answer basic questions about emergency
+                        numbers and safety tips. What would you like to know?
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggestions">
+                <button type="button" class="suggestion"
+                        data-question="What is the emergency number in India?">
+                    Emergency number
+                </button>
+
+                <button type="button" class="suggestion"
+                        data-question="What should I do during a fire?">
+                    Fire safety
+                </button>
+
+                <button type="button" class="suggestion"
+                        data-question="What should I do if someone is injured?">
+                    First aid
+                </button>
+            </div>
+
+            <form class="chat-form" id="chatForm">
+                <input type="text" id="userInput"
+                       placeholder="Type your question..."
+                       aria-label="Type your question"
+                       autocomplete="off" required>
+
+                <button type="submit" aria-label="Send message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+
+            <p class="chat-disclaimer">
+                <i class="fa-solid fa-circle-info"></i>
+                Demo assistant with predefined responses. Not a real AI or
+                emergency service. For immediate danger in India, call 112.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <h3><i class="fa-solid fa-shield-heart"></i> Emergency Contact</h3>
+                <p>A student project designed to make emergency information
+                   easier to access.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="/index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="emergency.html">Emergency Numbers</a>
+                </div>
+            </div>
+            <div>
+                <h4>More</h4>
+                <div class="footer-links">
+                    <a href="safety-tips.html">Safety Tips</a>
+                    <a href="ai-assistant.html">AI Assistant</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Emergency Contact. Educational project.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Emergency Contact</title>
+
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/contact.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar container">
+        <a href="/index.html" class="logo">
+            <i class="fa-solid fa-shield-heart"></i>
+            Emergency<span>Contact</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation"
+                aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="emergency.html">Emergency Numbers</a></li>
+            <li><a href="safety-tips.html">Safety Tips</a></li>
+            <li><a href="ai-assistant.html">AI Assistant</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contact-hero">
+        <div class="container">
+            <span>GET IN TOUCH</span>
+            <h1>Contact Us</h1>
+            <p>Have a question or suggestion about our project?</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container contact-layout">
+            <div class="contact-info">
+                <h2>We would love to hear from you.</h2>
+                <p>
+                    Use the form to share feedback, ask a question, or
+                    suggest an improvement to the website.
+                </p>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>Use the contact form to send feedback.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <div>
+                        <h3>Project</h3>
+                        <p>Emergency Contact Website</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div>
+                        <h3>Important</h3>
+                        <p>This form is a frontend demo and does not send data.</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <h2>Send a Message</h2>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="question">Question</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5"
+                          placeholder="Write your message..." required></textarea>
+
+                <button type="submit" class="btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Submit Message
+                </button>
+
+                <p id="formMessage" class="form-message"
+                   aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <h3><i class="fa-solid fa-shield-heart"></i> Emergency Contact</h3>
+                <p>A student project designed to make emergency information
+                   easier to access.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="/index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="emergency.html">Emergency Numbers</a>
+                </div>
+            </div>
+            <div>
+                <h4>More</h4>
+                <div class="footer-links">
+                    <a href="safety-tips.html">Safety Tips</a>
+                    <a href="ai-assistant.html">AI Assistant</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Emergency Contact. Educational project.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
